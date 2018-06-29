@@ -13,16 +13,17 @@ class Tool(object):
     def add_num(cls):
         cls.num = 100
 
+    # 静态方法
+    @staticmethod
+    def print_menu():
+        print("-"*25)
+        print("    地下城与勇士")
+        print("    1.开始游戏")
+        print("    2.退出游戏")
+        print("-"*25)
 
-def print_menu():
-    print("-"*25)
-    print("    地下城与勇士")
-    print("    1.开始游戏")
-    print("    2.退出游戏")
-    print("-"*25)
 
-
-print_menu()
+Tool.print_menu()
 # 全局变量
 # num = 0
 tool = Tool("铁锹")
